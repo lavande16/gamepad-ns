@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/pixel_space_sm">
+
+    <com.google.android.material.card.MaterialCardView
+        style="@style/GameFoldPixel.Card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        app:cardElevation="0dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxHeight="420dp"
+            android:padding="@dimen/pixel_space_sm">
+
+            <TextView
+                android:id="@+id/text_system_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="monospace"
+                android:textAppearance="@style/GameFoldPixel.Text.Numeric"
+                android:textColor="@color/pixel_text_dark"
+                android:textIsSelectable="true" />
+
+        </ScrollView>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusable="false"
+    android:focusableInTouchMode="false"
+    android:padding="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <org.yuzu.yuzu_emu.views.AspectRatioFrameLayout
+            android:id="@+id/card_game_grid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:minHeight="@dimen/pixel_touch_target"
+            android:stateListAnimator="@null"
+            android:transitionName="card_game">
+
+            <org.yuzu.yuzu_emu.views.SquareImageView
+                android:id="@+id/image_game_screen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:layout_marginStart="14dp"
+                android:layout_marginTop="13dp"
+                android:layout_marginEnd="14dp"
+                android:contentDescription="@null"
+                android:scaleType="centerCrop"
+                tools:src="@drawable/gamefold_brand_mark" />
+
+            <ImageView
+                android:id="@+id/game_cartridge_frame"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="3dp"
+                android:contentDescription="@null"
+                android:importantForAccessibility="no"
+                android:scaleType="fitXY"
+                android:src="@drawable/gamefold_cartridge_frame" />
+
+            <ImageView
+                android:id="@+id/game_cartridge_focus_frame"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@null"
+                android:duplicateParentState="true"
+                android:importantForAccessibility="no"
+                android:scaleType="fitXY"
+                android:src="@drawable/gamefold_cartridge_focus_selector" />
+
+        </org.yuzu.yuzu_emu.views.AspectRatioFrameLayout>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/text_game_title"
+            style="@style/GameFoldPixel.Text.Label"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="4dp"
+            android:ellipsize="end"
+            android:fontFamily="monospace"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:letterSpacing="0.02"
+            android:maxLines="2"
+            android:paddingHorizontal="4dp"
+            android:textAlignment="center"
+            android:textColor="@color/pixel_home_text"
+            android:textSize="12sp"
+            tools:text="The Legend of Zelda: Skyward Sword" />
+
+    </LinearLayout>
+
+</FrameLayout>

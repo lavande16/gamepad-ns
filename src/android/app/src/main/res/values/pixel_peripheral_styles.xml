@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="GameFoldPixel.AppBar" parent="Widget.Material3.AppBarLayout">
+        <item name="android:background">@color/pixel_surface_slate_dark</item>
+        <item name="android:elevation">0dp</item>
+        <item name="elevation">0dp</item>
+    </style>
+
+    <style name="GameFoldPixel.Text.Light" parent="GameFoldPixel.Text">
+        <item name="android:textColor">@color/pixel_text_light</item>
+    </style>
+
+    <style name="GameFoldPixel.Text.Label.Light" parent="GameFoldPixel.Text.Label">
+        <item name="android:textColor">@color/pixel_text_light</item>
+    </style>
+
+    <style name="GameFoldPixel.Card" parent="Widget.Material3.CardView.Filled">
+        <item name="android:background">@drawable/pixel_list_item_background</item>
+        <item name="cardBackgroundColor">@color/pixel_transparent</item>
+        <item name="cardCornerRadius">0dp</item>
+        <item name="cardElevation">0dp</item>
+        <item name="strokeWidth">0dp</item>
+    </style>
+
+    <style name="GameFoldPixel.ActionButton" parent="Widget.Material3.ExtendedFloatingActionButton.Primary">
+        <item name="android:minHeight">@dimen/pixel_touch_target</item>
+        <item name="android:minWidth">@dimen/pixel_touch_target</item>
+        <item name="android:outlineAmbientShadowColor">@color/pixel_action_shadow</item>
+        <item name="android:outlineSpotShadowColor">@color/pixel_action_shadow</item>
+        <item name="android:textColor">@color/pixel_text_light</item>
+        <item name="backgroundTint">@color/pixel_action</item>
+        <item name="cornerRadius">0dp</item>
+        <item name="elevation">4dp</item>
+        <item name="iconTint">@color/pixel_text_light</item>
+        <item name="rippleColor">@color/pixel_focus</item>
+        <item name="strokeColor">@color/pixel_border_ink</item>
+        <item name="strokeWidth">2dp</item>
+    </style>
+</resources>

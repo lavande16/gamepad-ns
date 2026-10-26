@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!--
+        Adaptive icons are masked and enlarged by the launcher. Keep every essential
+        pixel inside Android's centered 66 x 66 safe zone instead of nesting a
+        full-bleed bitmap inside an inset drawable.
+    -->
+    <group
+        android:pivotX="54"
+        android:pivotY="54"
+        android:scaleX="0.56"
+        android:scaleY="0.56">
+        <path
+            android:fillColor="#202125"
+            android:pathData="M23,0H85C97.7,0 108,10.3 108,23V85C108,97.7 97.7,108 85,108H23C10.3,108 0,97.7 0,85V23C0,10.3 10.3,0 23,0Z" />
+        <path
+            android:fillColor="#60636C"
+            android:pathData="M22.2,14.5H85.8A10.4,10.4 0,0 1,96.2 24.9V55.8A10.4,10.4 0,0 1,85.8 66.2H22.2A10.4,10.4 0,0 1,11.8 55.8V24.9A10.4,10.4 0,0 1,22.2 14.5Z" />
+        <path android:pathData="M26.6,25.7H81.3A4.1,4.1 0,0 1,85.4 29.8V50.8A4.1,4.1 0,0 1,81.3 54.9H26.6A4.1,4.1 0,0 1,22.5 50.8V29.8A4.1,4.1 0,0 1,26.6 25.7Z">
+            <aapt:attr name="android:fillColor">
+                <gradient
+                    android:endX="85.4"
+                    android:endY="40.3"
+                    android:startX="22.5"
+                    android:startY="40.3"
+                    android:type="linear">
+                    <item
+                        android:color="#FF4D9EF0"
+                        android:offset="0" />
+                    <item
+                        android:color="#FF8BD1F1"
+                        android:offset="1" />
+                </gradient>
+            </aapt:attr>
+        </path>
+        <path
+            android:fillColor="#F0F0F0"
+            android:pathData="M26.9,77.25A6.75,6.75 0,1 0,26.9 90.75A6.75,6.75 0,1 0,26.9 77.25M81.2,77.25A6.75,6.75 0,1 0,81.2 90.75A6.75,6.75 0,1 0,81.2 77.25" />
+        <path
+            android:fillColor="#EA5B00"
+            android:pathData="M88.1,19.4A2.6,2.6 0,1 0,88.1 24.6A2.6,2.6 0,1 0,88.1 19.4" />
+    </group>
+</vector>

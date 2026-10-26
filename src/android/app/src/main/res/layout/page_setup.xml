@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/content_divider"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:clipToPadding="false"
+        android:fillViewport="true"
+        android:padding="@dimen/pixel_space_md"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/content_divider"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/icon"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:contentDescription="@null"
+                tools:src="@drawable/ic_notification" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/text_title"
+                style="@style/GameFoldPixel.Text.Title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/pixel_space_sm"
+                android:gravity="center"
+                android:textAlignment="center"
+                tools:text="@string/welcome" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/text_description"
+                style="@style/GameFoldPixel.Text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/pixel_space_sm"
+                android:gravity="center"
+                android:textAlignment="center"
+                tools:text="@string/welcome_description" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/text_confirmation"
+                style="@style/GameFoldPixel.Text.Title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/pixel_space_md"
+                android:gravity="center"
+                android:text="@string/step_complete"
+                android:textAlignment="center"
+                android:textColor="@color/pixel_focus"
+                android:visibility="invisible" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:clipToPadding="false"
+        android:fillViewport="true"
+        android:padding="@dimen/pixel_space_md"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/content_divider"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/page_button_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:minHeight="240dp"
+            android:orientation="vertical" />
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

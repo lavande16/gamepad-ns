@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/GameFoldPixel.ContentPage">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider">
+
+        <LinearLayout
+            android:id="@+id/no_results_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/icon_no_results"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:src="@drawable/ic_search"
+                app:tint="@color/pixel_text_dark" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/notice_text"
+                style="@style/GameFoldPixel.Text.Title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="8dp"
+                android:text="@string/search_settings"
+                tools:visibility="visible" />
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/settings_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:paddingHorizontal="48dp"
+            android:paddingVertical="@dimen/pixel_space_sm" />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/frame_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <FrameLayout
+            android:id="@+id/search_background"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_marginHorizontal="@dimen/pixel_space_sm"
+            android:background="@drawable/pixel_panel_background"
+            android:padding="@dimen/pixel_space_xs">
+
+            <LinearLayout
+                android:id="@+id/search_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="56dp"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatImageButton
+                    android:id="@+id/back_button"
+                    style="@style/GameFoldPixel.ImageIconButton"
+                    android:layout_gravity="center_vertical"
+                    android:contentDescription="@string/back"
+                    app:srcCompat="@drawable/ic_back" />
+
+                <EditText
+                    android:id="@+id/search_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="sans-serif"
+                    android:hint="@string/search_settings"
+                    android:imeOptions="flagNoFullscreen"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:textColor="@color/pixel_text_dark"
+                    android:textColorHint="@color/pixel_text_secondary"
+                    android:textSize="@dimen/pixel_text_body" />
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/clear_button"
+                style="@style/GameFoldPixel.ImageIconButton"
+                android:layout_gravity="center_vertical|end"
+                android:contentDescription="@string/clear"
+                android:visibility="invisible"
+                app:srcCompat="@drawable/ic_clear"
+                tools:visibility="visible" />
+
+        </FrameLayout>
+
+    </FrameLayout>
+
+    <com.google.android.material.divider.MaterialDivider
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="@dimen/pixel_space_sm"
+        app:dividerColor="@color/pixel_border_ink"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frame_search" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

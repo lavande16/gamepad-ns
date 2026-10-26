@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="288dp"
+    android:height="288dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <path
+        android:fillColor="@color/gamefold_splash_background"
+        android:pathData="M0,0h108v108h-108z" />
+
+    <!-- One rounded icon silhouette matching the home-page application icon. -->
+    <group
+        android:pivotX="54"
+        android:pivotY="54"
+        android:scaleX="0.34"
+        android:scaleY="0.34"
+        android:translateY="-9">
+        <path
+            android:fillColor="@color/gamefold_icon_background"
+            android:pathData="M24,0H84A24,24 0,0 1,108 24V84A24,24 0,0 1,84 108H24A24,24 0,0 1,0 84V24A24,24 0,0 1,24 0Z" />
+        <path
+            android:fillColor="#60636C"
+            android:pathData="M22.2,14.5H85.8A10.4,10.4 0,0 1,96.2 24.9V55.8A10.4,10.4 0,0 1,85.8 66.2H22.2A10.4,10.4 0,0 1,11.8 55.8V24.9A10.4,10.4 0,0 1,22.2 14.5Z" />
+        <path android:pathData="M26.6,25.7H81.3A4.1,4.1 0,0 1,85.4 29.8V50.8A4.1,4.1 0,0 1,81.3 54.9H26.6A4.1,4.1 0,0 1,22.5 50.8V29.8A4.1,4.1 0,0 1,26.6 25.7Z">
+            <aapt:attr name="android:fillColor">
+                <gradient
+                    android:endX="85.4"
+                    android:endY="40.3"
+                    android:startX="22.5"
+                    android:startY="40.3"
+                    android:type="linear">
+                    <item android:color="#FF4D9EF0" android:offset="0" />
+                    <item android:color="#FF8BD1F1" android:offset="1" />
+                </gradient>
+            </aapt:attr>
+        </path>
+        <path
+            android:fillColor="#F0F0F0"
+            android:pathData="M26.9,77.25A6.75,6.75 0,1 0,26.9 90.75A6.75,6.75 0,1 0,26.9 77.25M81.2,77.25A6.75,6.75 0,1 0,81.2 90.75A6.75,6.75 0,1 0,81.2 77.25" />
+        <path
+            android:fillColor="#EA5B00"
+            android:pathData="M88.1,19.4A2.6,2.6 0,1 0,88.1 24.6A2.6,2.6 0,1 0,88.1 19.4" />
+    </group>
+
+    <!-- Keep the existing GAMEFOLD pixel wordmark and hard shadow. -->
+    <group
+        android:scaleX="1.2"
+        android:scaleY="1.2"
+        android:translateX="25.8"
+        android:translateY="70">
+        <group
+            android:translateX="1"
+            android:translateY="1">
+            <path
+                android:fillColor="@color/gamefold_splash_wordmark_shadow"
+                android:pathData="M1,0h1v1h-1zM2,0h1v1h-1zM3,0h1v1h-1zM0,1h1v1h-1zM4,1h1v1h-1zM0,2h1v1h-1zM0,3h1v1h-1zM2,3h1v1h-1zM3,3h1v1h-1zM4,3h1v1h-1zM0,4h1v1h-1zM4,4h1v1h-1zM0,5h1v1h-1zM4,5h1v1h-1zM1,6h1v1h-1zM2,6h1v1h-1zM3,6h1v1h-1zM7,0h1v1h-1zM8,0h1v1h-1zM9,0h1v1h-1zM6,1h1v1h-1zM10,1h1v1h-1zM6,2h1v1h-1zM10,2h1v1h-1zM6,3h1v1h-1zM7,3h1v1h-1zM8,3h1v1h-1zM9,3h1v1h-1zM10,3h1v1h-1zM6,4h1v1h-1zM10,4h1v1h-1zM6,5h1v1h-1zM10,5h1v1h-1zM6,6h1v1h-1zM10,6h1v1h-1zM12,0h1v1h-1zM16,0h1v1h-1zM12,1h1v1h-1zM13,1h1v1h-1zM15,1h1v1h-1zM16,1h1v1h-1zM12,2h1v1h-1zM14,2h1v1h-1zM16,2h1v1h-1zM12,3h1v1h-1zM14,3h1v1h-1zM16,3h1v1h-1zM12,4h1v1h-1zM16,4h1v1h-1zM12,5h1v1h-1zM16,5h1v1h-1zM12,6h1v1h-1zM16,6h1v1h-1zM18,0h1v1h-1zM19,0h1v1h-1zM20,0h1v1h-1zM21,0h1v1h-1zM22,0h1v1h-1zM18,1h1v1h-1zM18,2h1v1h-1zM18,3h1v1h-1zM19,3h1v1h-1zM20,3h1v1h-1zM21,3h1v1h-1zM18,4h1v1h-1zM18,5h1v1h-1zM18,6h1v1h-1zM19,6h1v1h-1zM20,6h1v1h-1zM21,6h1v1h-1zM22,6h1v1h-1zM24,0h1v1h-1zM25,0h1v1h-1zM26,0h1v1h-1zM27,0h1v1h-1zM28,0h1v1h-1zM24,1h1v1h-1zM24,2h1v1h-1zM24,3h1v1h-1zM25,3h1v1h-1zM26,3h1v1h-1zM27,3h1v1h-1zM24,4h1v1h-1zM24,5h1v1h-1zM24,6h1v1h-1zM31,0h1v1h-1zM32,0h1v1h-1zM33,0h1v1h-1zM30,1h1v1h-1zM34,1h1v1h-1zM30,2h1v1h-1zM34,2h1v1h-1zM30,3h1v1h-1zM34,3h1v1h-1zM30,4h1v1h-1zM34,4h1v1h-1zM30,5h1v1h-1zM34,5h1v1h-1zM31,6h1v1h-1zM32,6h1v1h-1zM33,6h1v1h-1zM36,0h1v1h-1zM36,1h1v1h-1zM36,2h1v1h-1zM36,3h1v1h-1zM36,4h1v1h-1zM36,5h1v1h-1zM36,6h1v1h-1zM37,6h1v1h-1zM38,6h1v1h-1zM39,6h1v1h-1zM40,6h1v1h-1zM42,0h1v1h-1zM43,0h1v1h-1zM44,0h1v1h-1zM45,0h1v1h-1zM42,1h1v1h-1zM46,1h1v1h-1zM42,2h1v1h-1zM46,2h1v1h-1zM42,3h1v1h-1zM46,3h1v1h-1zM42,4h1v1h-1zM46,4h1v1h-1zM42,5h1v1h-1zM46,5h1v1h-1zM42,6h1v1h-1zM43,6h1v1h-1zM44,6h1v1h-1zM45,6h1v1h-1z" />
+        </group>
+        <path
+            android:fillColor="@color/pixel_text_light"
+            android:pathData="M1,0h1v1h-1zM2,0h1v1h-1zM3,0h1v1h-1zM0,1h1v1h-1zM4,1h1v1h-1zM0,2h1v1h-1zM0,3h1v1h-1zM2,3h1v1h-1zM3,3h1v1h-1zM4,3h1v1h-1zM0,4h1v1h-1zM4,4h1v1h-1zM0,5h1v1h-1zM4,5h1v1h-1zM1,6h1v1h-1zM2,6h1v1h-1zM3,6h1v1h-1zM7,0h1v1h-1zM8,0h1v1h-1zM9,0h1v1h-1zM6,1h1v1h-1zM10,1h1v1h-1zM6,2h1v1h-1zM10,2h1v1h-1zM6,3h1v1h-1zM7,3h1v1h-1zM8,3h1v1h-1zM9,3h1v1h-1zM10,3h1v1h-1zM6,4h1v1h-1zM10,4h1v1h-1zM6,5h1v1h-1zM10,5h1v1h-1zM6,6h1v1h-1zM10,6h1v1h-1zM12,0h1v1h-1zM16,0h1v1h-1zM12,1h1v1h-1zM13,1h1v1h-1zM15,1h1v1h-1zM16,1h1v1h-1zM12,2h1v1h-1zM14,2h1v1h-1zM16,2h1v1h-1zM12,3h1v1h-1zM14,3h1v1h-1zM16,3h1v1h-1zM12,4h1v1h-1zM16,4h1v1h-1zM12,5h1v1h-1zM16,5h1v1h-1zM12,6h1v1h-1zM16,6h1v1h-1zM18,0h1v1h-1zM19,0h1v1h-1zM20,0h1v1h-1zM21,0h1v1h-1zM22,0h1v1h-1zM18,1h1v1h-1zM18,2h1v1h-1zM18,3h1v1h-1zM19,3h1v1h-1zM20,3h1v1h-1zM21,3h1v1h-1zM18,4h1v1h-1zM18,5h1v1h-1zM18,6h1v1h-1zM19,6h1v1h-1zM20,6h1v1h-1zM21,6h1v1h-1zM22,6h1v1h-1zM24,0h1v1h-1zM25,0h1v1h-1zM26,0h1v1h-1zM27,0h1v1h-1zM28,0h1v1h-1zM24,1h1v1h-1zM24,2h1v1h-1zM24,3h1v1h-1zM25,3h1v1h-1zM26,3h1v1h-1zM27,3h1v1h-1zM24,4h1v1h-1zM24,5h1v1h-1zM24,6h1v1h-1zM31,0h1v1h-1zM32,0h1v1h-1zM33,0h1v1h-1zM30,1h1v1h-1zM34,1h1v1h-1zM30,2h1v1h-1zM34,2h1v1h-1zM30,3h1v1h-1zM34,3h1v1h-1zM30,4h1v1h-1zM34,4h1v1h-1zM30,5h1v1h-1zM34,5h1v1h-1zM31,6h1v1h-1zM32,6h1v1h-1zM33,6h1v1h-1zM36,0h1v1h-1zM36,1h1v1h-1zM36,2h1v1h-1zM36,3h1v1h-1zM36,4h1v1h-1zM36,5h1v1h-1zM36,6h1v1h-1zM37,6h1v1h-1zM38,6h1v1h-1zM39,6h1v1h-1zM40,6h1v1h-1zM42,0h1v1h-1zM43,0h1v1h-1zM44,0h1v1h-1zM45,0h1v1h-1zM42,1h1v1h-1zM46,1h1v1h-1zM42,2h1v1h-1zM46,2h1v1h-1zM42,3h1v1h-1zM46,3h1v1h-1zM42,4h1v1h-1zM46,4h1v1h-1zM42,5h1v1h-1zM46,5h1v1h-1zM42,6h1v1h-1zM43,6h1v1h-1zM44,6h1v1h-1zM45,6h1v1h-1z" />
+    </group>
+</vector>

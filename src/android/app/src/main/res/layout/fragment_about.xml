@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinator_about"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pixel_background_moss_light">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar_about"
+        style="@style/GameFoldPixel.AppBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="false"
+        android:touchscreenBlocksFocus="false">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar_about"
+            style="@style/GameFoldPixel.Toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/pixel_toolbar_height"
+            android:touchscreenBlocksFocus="false"
+            app:navigationIcon="@drawable/pixel_icon_back"
+            app:title="@string/about" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scroll_about"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/pixel_background_moss_light"
+        android:defaultFocusHighlightEnabled="false"
+        android:fadeScrollbars="false"
+        android:fillViewport="true"
+        android:scrollbars="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:id="@+id/content_about"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:paddingHorizontal="48dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="@dimen/pixel_space_md"
+            android:translationY="-12dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="@dimen/pixel_space_md"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/brand_block"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="42dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:scaleX="0.9"
+                    android:scaleY="0.9"
+                    android:transformPivotX="0dp"
+                    android:transformPivotY="0dp">
+
+                    <ImageView
+                        android:id="@+id/image_logo"
+                        android:layout_width="44dp"
+                        android:layout_height="44dp"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/gamefold_brand_mark" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/pixel_space_md"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <org.yuzu.yuzu_emu.views.PixelWordmarkView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="GAMEPAD NS"
+                            android:textColor="@color/pixel_text_dark"
+                            android:textSize="18sp"
+                            app:pixelShadowEnabled="false"
+                            app:pixelWordmarkColor="@color/pixel_text_dark" />
+
+                        <org.yuzu.yuzu_emu.views.PixelWordmarkView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/pixel_space_xs"
+                            android:text="HAVE FUN!"
+                            android:textColor="@color/pixel_text_secondary"
+                            android:textSize="5.5sp"
+                            app:pixelWordmarkColor="@color/pixel_text_secondary"
+                            app:pixelWordmarkSize="10.5sp"
+                            app:pixelShadowEnabled="false" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="1dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <org.yuzu.yuzu_emu.views.PixelWordmarkView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="DEVELOPER"
+                    android:textColor="@color/pixel_text_secondary"
+                    android:textSize="7sp"
+                    app:pixelWordmarkColor="@color/pixel_text_secondary"
+                    app:pixelWordmarkSize="10.5sp"
+                    app:pixelShadowEnabled="false" />
+
+                <LinearLayout
+                    android:id="@+id/social_links"
+                    android:layout_width="wrap_content"
+                    android:layout_height="44dp"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+
+                    <androidx.appcompat.widget.AppCompatImageButton
+                        android:id="@+id/button_xiaohongshu"
+                        android:layout_width="44dp"
+                        android:layout_height="44dp"
+                        android:background="@null"
+                        android:contentDescription="@string/xiaohongshu"
+                        android:focusable="true"
+                        android:nextFocusDown="@id/button_version_name"
+                        android:nextFocusRight="@id/button_dribbble"
+                        android:padding="0dp"
+                        android:scaleType="centerInside"
+                        android:tint="@null"
+                        app:srcCompat="@drawable/about_xiaohongshu"
+                        app:tint="@null" />
+
+                    <androidx.appcompat.widget.AppCompatImageButton
+                        android:id="@+id/button_dribbble"
+                        android:layout_width="44dp"
+                        android:layout_height="44dp"
+                        android:layout_marginStart="8dp"
+                        android:background="@null"
+                        android:contentDescription="@string/dribbble"
+                        android:focusable="true"
+                        android:nextFocusDown="@id/button_version_name"
+                        android:nextFocusLeft="@id/button_xiaohongshu"
+                        android:nextFocusRight="@id/button_version_name"
+                        android:padding="0dp"
+                        android:scaleType="centerInside"
+                        android:tint="@null"
+                        app:srcCompat="@drawable/about_dribbble"
+                        app:tint="@null" />
+
+                </LinearLayout>
+
+                <com.google.android.material.textview.MaterialTextView
+                    style="@style/GameFoldPixel.Text.Secondary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/pixel_space_xs"
+                    android:text="@string/gamefold_developer_email"
+                    android:textColor="@color/pixel_text_secondary"
+                    android:textSize="11sp" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    style="@style/GameFoldPixel.Text.Secondary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/pixel_space_xs"
+                    android:text="@string/gamefold_copyright"
+                    android:textColor="@color/pixel_text_secondary"
+                    android:textSize="10sp" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    style="@style/GameFoldPixel.Text.Secondary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/pixel_space_xs"
+                    android:text="@string/gamefold_eden_disclaimer"
+                    android:textColor="@color/pixel_text_secondary"
+                    android:textSize="10sp" />
+
+                <Space
+                    android:layout_width="1dp"
+                    android:layout_height="12dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="bottom"
+                android:orientation="vertical">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/button_version_name"
+                    style="@style/GameFoldPixel.Card.Outlined"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:nextFocusLeft="@id/toolbar_about"
+                    android:nextFocusDown="@id/button_website"
+                    app:cardBackgroundColor="@color/pixel_surface_slate"
+                    app:cardElevation="0dp"
+                    app:rippleColor="@color/pixel_focus"
+                    app:strokeColor="@color/pixel_border_ink"
+                    app:strokeWidth="2dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:minHeight="68dp"
+                        android:orientation="horizontal"
+                        android:padding="12dp">
+
+                        <ImageView
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginEnd="12dp"
+                            android:contentDescription="@null"
+                            android:src="@drawable/pixel_icon_info" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <com.google.android.material.textview.MaterialTextView
+                                style="@style/GameFoldPixel.Text.Label"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/current_version"
+                                android:textAlignment="viewStart"
+                                android:textColor="@color/pixel_text_dark"
+                                android:textSize="15sp" />
+
+                            <com.google.android.material.textview.MaterialTextView
+                                android:id="@+id/text_version_name"
+                                style="@style/GameFoldPixel.Text.Numeric"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/pixel_space_xs"
+                                android:ellipsize="end"
+                                android:maxLines="1"
+                                android:textAlignment="viewStart"
+                                android:textColor="@color/pixel_text_secondary"
+                                android:textSize="12sp"
+                                tools:text="GameFold" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/button_website"
+                    style="@style/GameFoldPixel.Card.Outlined"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/pixel_space_sm"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:nextFocusUp="@id/button_version_name"
+                    android:nextFocusDown="@id/button_feedback"
+                    app:cardBackgroundColor="@color/pixel_surface_slate"
+                    app:cardElevation="0dp"
+                    app:rippleColor="@color/pixel_focus"
+                    app:strokeColor="@color/pixel_border_ink"
+                    app:strokeWidth="2dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:minHeight="68dp"
+                        android:orientation="horizontal"
+                        android:padding="12dp">
+
+                        <ImageView
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_marginEnd="12dp"
+                            android:contentDescription="@null"
+                            android:src="@drawable/pixel_icon_website" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <com.google.android.material.textview.MaterialTextView
+                                style="@style/GameFoldPixel.Text.Label"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/developer_website"
+                                android:textAlignment="viewStart"
+                                android:textColor="@color/pixel_text_dark"
+                                android:textSize="15sp" />
+
+                            <com.google.android.material.textview.MaterialTextView
+                                style="@style/GameFoldPixel.Text.Value"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/pixel_space_xs"
+                                android:ellipsize="end"
+                                android:maxLines="1"
+                                android:text="@string/website_link"
+                                android:textAlignment="viewStart"
+                                android:textColor="@color/pixel_text_secondary"
+                                android:textSize="12sp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/button_feedback"
+                    style="@style/GameFoldPixel.Card.Outlined"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginTop="@dimen/pixel_space_sm"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:nextFocusUp="@id/button_website"
+                    app:cardBackgroundColor="@color/pixel_surface_slate"
+                    app:cardElevation="0dp"
+                    app:rippleColor="@color/pixel_focus"
+                    app:strokeColor="@color/pixel_border_ink"
+                    app:strokeWidth="2dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:minHeight="56dp"
+                        android:orientation="horizontal"
+                        android:padding="12dp">
+
+                        <ImageView
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_marginEnd="12dp"
+                            android:contentDescription="@null"
+                            android:src="@drawable/pixel_icon_xiaohongshu" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            style="@style/GameFoldPixel.Text.Label"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/feedback_and_suggestions"
+                            android:textColor="@color/pixel_text_dark"
+                            android:textSize="15sp" />
+
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

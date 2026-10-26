@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:left="4dp" android:top="4dp">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/pixel_cartridge_shell_shadow" />
+        </shape>
+    </item>
+    <item android:right="4dp" android:bottom="4dp">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/pixel_cartridge_shell" />
+            <stroke android:width="2dp" android:color="@color/pixel_cartridge_border" />
+        </shape>
+    </item>
+    <item android:left="7dp" android:top="7dp" android:right="7dp" android:bottom="10dp">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/pixel_cartridge_inner" />
+            <stroke android:width="2dp" android:color="@color/pixel_cartridge_shell" />
+        </shape>
+    </item>
+</layer-list>

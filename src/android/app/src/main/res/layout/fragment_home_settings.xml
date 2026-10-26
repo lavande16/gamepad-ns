@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/GameFoldPixel.ContentPage">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar_home_settings"
+        style="@style/Widget.Eden.TransparentTopAppBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="false"
+        android:background="@color/pixel_surface_slate_dark"
+        android:touchscreenBlocksFocus="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar_home_settings"
+            style="@style/GameFoldPixel.Toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/pixel_toolbar_height"
+            android:touchscreenBlocksFocus="false"
+            app:navigationIcon="@drawable/pixel_icon_back"
+            app:navigationIconTint="@color/pixel_text_dark"
+            app:titleTextColor="@color/pixel_text_dark"
+            app:title="@string/preferences_settings" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scroll_view_settings"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@android:color/transparent"
+        android:clipToPadding="false"
+        android:defaultFocusHighlightEnabled="false"
+        android:fadeScrollbars="false"
+        android:scrollbars="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/appbar_home_settings">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/linear_layout_settings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="48dp"
+            android:paddingTop="@dimen/pixel_space_md"
+            android:paddingBottom="@dimen/pixel_space_md">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/home_settings_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:nestedScrollingEnabled="false" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

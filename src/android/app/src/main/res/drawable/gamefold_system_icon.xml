@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Kept structurally identical to the controller APK launcher icon. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <path
+        android:fillColor="#202125"
+        android:pathData="M0,0h108v108h-108z" />
+    <path
+        android:fillColor="#60636C"
+        android:pathData="M22.2,14.5h63.6a10.4,10.4 0,0 1,10.4 10.4v30.9a10.4,10.4 0,0 1,-10.4 10.4h-63.6a10.4,10.4 0,0 1,-10.4 -10.4v-30.9a10.4,10.4 0,0 1,10.4 -10.4z" />
+    <path android:pathData="M26.6,25.7h54.7a4.1,4.1 0,0 1,4.1 4.1v21a4.1,4.1 0,0 1,-4.1 4.1h-54.7a4.1,4.1 0,0 1,-4.1 -4.1v-21a4.1,4.1 0,0 1,4.1 -4.1z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:endColor="#8BD1F1"
+                android:endX="85.4"
+                android:endY="40.3"
+                android:startColor="#4D9EF0"
+                android:startX="22.5"
+                android:startY="40.3"
+                android:type="linear" />
+        </aapt:attr>
+    </path>
+    <path
+        android:fillColor="#F0F0F0"
+        android:pathData="M26.9,77.25a6.75,6.75 0,1 0,0 13.5a6.75,6.75 0,1 0,0 -13.5M81.2,77.25a6.75,6.75 0,1 0,0 13.5a6.75,6.75 0,1 0,0 -13.5" />
+    <path
+        android:fillColor="#EA5B00"
+        android:pathData="M88.1,19.4a2.6,2.6 0,1 0,0 5.2a2.6,2.6 0,1 0,0 -5.2" />
+</vector>

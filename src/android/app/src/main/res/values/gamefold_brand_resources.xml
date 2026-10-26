@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Rounded system/app mark and square profile mark intentionally use separate assets. -->
+    <item name="gamefold_brand_mark" type="drawable">@drawable/gamefold_icon_round</item>
+    <item name="gamefold_profile_mark" type="drawable">@drawable/gamefold_ns_launcher_icon</item>
+</resources>

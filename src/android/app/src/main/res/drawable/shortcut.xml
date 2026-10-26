@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Required base layer for adaptive game shortcut composition. -->
+    <item>
+        <color android:color="@android:color/white" />
+    </item>
+    <item
+        android:id="@+id/shortcut_foreground"
+        android:drawable="@drawable/gamefold_system_icon" />
+
+</layer-list>

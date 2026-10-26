@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinator_licenses"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/GameFoldPixel.ContentPage">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar_drivers"
+        style="@style/GameFoldPixel.AppBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="false"
+        android:touchscreenBlocksFocus="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        app:liftOnScrollTargetViewId="@id/list_drivers">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar_drivers"
+            style="@style/GameFoldPixel.Toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/pixel_toolbar_height"
+            android:touchscreenBlocksFocus="false"
+            app:navigationIcon="@drawable/pixel_icon_back"
+            app:title="@string/gpu_driver_fetcher" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <TextView
+        android:id="@+id/label_gpu_model"
+        style="@style/GameFoldPixel.Text.Label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="8dp"
+        android:padding="8dp"
+        android:text="@string/gpu_model"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/appbar_drivers" />
+
+    <TextView
+        android:id="@+id/badge_gpu_model"
+        style="@style/GameFoldPixel.Text.Numeric"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/pixel_panel_background"
+        android:paddingHorizontal="12dp"
+        android:paddingVertical="6dp"
+        android:textColor="@color/pixel_text_dark"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@id/label_gpu_model"
+        app:layout_constraintStart_toEndOf="@id/label_gpu_model"
+        app:layout_constraintTop_toTopOf="@id/label_gpu_model" />
+
+    <TextView
+        android:id="@+id/label_recommended_driver"
+        style="@style/GameFoldPixel.Text.Label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="8dp"
+        android:padding="8dp"
+        android:text="@string/recommended_driver"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/label_gpu_model" />
+
+    <TextView
+        android:id="@+id/badge_recommended_driver"
+        style="@style/GameFoldPixel.Text.Numeric"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/pixel_panel_background"
+        android:paddingHorizontal="12dp"
+        android:paddingVertical="6dp"
+        android:textColor="@color/pixel_text_dark"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@id/label_recommended_driver"
+        app:layout_constraintStart_toEndOf="@id/label_recommended_driver"
+        app:layout_constraintTop_toTopOf="@id/label_recommended_driver" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="48dp"
+        android:background="@color/pixel_surface_slate_dark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/label_recommended_driver" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/list_drivers"
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_marginTop="8dp"
+        android:clipToPadding="false"
+        android:paddingHorizontal="48dp"
+        android:paddingBottom="@dimen/pixel_space_md"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        app:layout_constraintTop_toBottomOf="@id/divider"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/loadingIndicator"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="160dp"
+        android:layout_height="@dimen/pixel_progress_height"
+        android:layout_marginTop="12dp"
+        android:indeterminate="true"
+        android:indeterminateDrawable="@drawable/pixel_state_loading"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@id/list_drivers"
+        app:layout_constraintStart_toStartOf="@id/list_drivers"
+        app:layout_constraintTop_toTopOf="@id/list_drivers" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

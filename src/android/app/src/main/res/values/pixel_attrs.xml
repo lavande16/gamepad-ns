@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="PixelWordmarkView">
+        <attr name="pixelShadowEnabled" format="boolean" />
+        <!-- A direct foreground override keeps the home wordmark independent of theme text colors. -->
+        <attr name="pixelWordmarkColor" format="color" />
+        <attr name="pixelWordmarkBold" format="boolean" />
+        <attr name="pixelWordmarkSize" format="dimension" />
+    </declare-styleable>
+</resources>

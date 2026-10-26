@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item><shape android:shape="rectangle"><solid android:color="@color/pixel_focus" /></shape></item>
+    <item android:height="2dp" android:gravity="top">
+        <shape android:shape="rectangle"><solid android:color="@color/pixel_text_light" /></shape>
+    </item>
+    <item android:height="2dp" android:gravity="bottom">
+        <shape android:shape="rectangle"><solid android:color="@color/pixel_background_moss" /></shape>
+    </item>
+</layer-list>

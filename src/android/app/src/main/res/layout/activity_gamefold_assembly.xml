@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<org.yuzu.yuzu_emu.views.GameFoldShellLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pixel_background_deep">
+
+    <org.yuzu.yuzu_emu.views.GameFoldViewportLayout
+        android:id="@+id/gamefold_display_stage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/pixel_home_surface">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/pixel_background_moss_light"
+        android:paddingStart="48dp"
+        android:paddingTop="20dp"
+        android:paddingEnd="48dp"
+        android:paddingBottom="16dp">
+
+    <TextView
+        android:id="@+id/text_eyebrow"
+        style="@style/GameFoldPixel.Text.Value"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:letterSpacing="0.12"
+        android:text="@string/gamefold_assembly_eyebrow_permission"
+        android:textAllCaps="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_brand"
+        style="@style/GameFoldPixel.Text.Title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="GAMEPAD NS"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_eyebrow" />
+
+    <View
+        android:id="@+id/divider_top"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/pixel_border_ink"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_brand" />
+
+    <TextView
+        android:id="@+id/text_assembly_title"
+        style="@style/GameFoldPixel.Text.Title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/gamefold_assembly_permission_title"
+        android:textSize="26sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/divider_top" />
+
+    <TextView
+        android:id="@+id/text_assembly_detail"
+        style="@style/GameFoldPixel.Text.Value"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:maxLines="3"
+        android:text="@string/gamefold_assembly_permission_detail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_assembly_title" />
+
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:id="@+id/progress_assembly"
+        android:layout_width="0dp"
+        android:layout_height="12dp"
+        android:layout_marginTop="18dp"
+        android:max="100"
+        android:progress="0"
+        app:indicatorColor="@color/pixel_action"
+        app:indicatorDirectionLinear="startToEnd"
+        app:trackColor="@color/pixel_surface_slate_dark"
+        app:trackCornerRadius="0dp"
+        app:trackThickness="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_assembly_detail" />
+
+    <TextView
+        android:id="@+id/text_step_count"
+        style="@style/GameFoldPixel.Text.Value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="@string/gamefold_assembly_source_path"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/progress_assembly" />
+
+    <TextView
+        android:id="@+id/text_progress_percent"
+        style="@style/GameFoldPixel.Text.Value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="0%"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/progress_assembly" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_permission"
+        style="@style/GameFoldPixel.Button.Action"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="@string/gamefold_assembly_grant_permission"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_step_count" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_retry"
+        style="@style/GameFoldPixel.Button.Action"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="@string/gamefold_assembly_retry"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_step_count" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_primary_link"
+        style="@style/GameFoldPixel.Button.Action"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="@string/gamefold_open_website"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_step_count" />
+
+    <TextView
+        android:id="@+id/text_action_link"
+        style="@style/GameFoldPixel.Text.Value"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="16dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center_vertical"
+        android:text="@string/gamefold_mtk_fc_link"
+        android:textColor="@color/pixel_action"
+        android:textSize="18sp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toStartOf="@id/button_download_fc"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_step_count" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_download_fc"
+        style="@style/GameFoldPixel.Button.Action"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="18dp"
+        android:text="@string/gamefold_download"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_step_count" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    </org.yuzu.yuzu_emu.views.GameFoldViewportLayout>
+</org.yuzu.yuzu_emu.views.GameFoldShellLayout>

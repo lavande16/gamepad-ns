@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/pixel_surface_slate" />
+            <stroke android:width="2dp" android:color="@color/pixel_border_ink" />
+        </shape>
+    </item>
+    <item android:width="4dp" android:gravity="start">
+        <shape android:shape="rectangle"><solid android:color="@color/pixel_focus" /></shape>
+    </item>
+    <item android:height="2dp" android:gravity="bottom">
+        <shape android:shape="rectangle"><solid android:color="@color/pixel_surface_slate_dark" /></shape>
+    </item>
+</layer-list>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/coordinator_licenses"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/GameFoldPixel.ContentPage">
+
+    <LinearLayout
+        android:id="@+id/coordinatorLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appbar_drivers"
+            style="@style/GameFoldPixel.AppBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="false"
+            android:touchscreenBlocksFocus="false">
+
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/toolbar_drivers"
+                style="@style/GameFoldPixel.Toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/pixel_toolbar_height"
+                android:touchscreenBlocksFocus="false"
+                app:navigationIcon="@drawable/pixel_icon_back"
+                app:title="@string/gpu_driver_manager" />
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/driver_recommendation"
+            style="@style/GameFoldPixel.Text.Secondary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="48dp"
+            android:background="@drawable/pixel_section_header_background"
+            android:paddingHorizontal="12dp"
+            android:paddingVertical="8dp"
+            android:text="@string/gamefold_driver_recommendation"
+            android:textColor="@color/pixel_text_light"
+            android:textSize="12sp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/list_drivers"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:clipToPadding="false"
+            android:paddingHorizontal="48dp"
+            android:paddingTop="@dimen/pixel_space_sm"
+            android:paddingBottom="88dp"
+            />
+
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_install"
+        style="@style/GameFoldPixel.Button.Action"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp"
+        android:text="@string/install"
+        app:icon="@drawable/pixel_icon_install"
+        app:iconTint="@color/pixel_text_light"
+        app:iconGravity="textStart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/button_fetch"
+        style="@style/GameFoldPixel.ActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|start"
+        android:layout_margin="16dp"
+        android:text="@string/fetch"
+        app:icon="@drawable/pixel_icon_driver"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

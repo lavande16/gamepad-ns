@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- GameFold Pixel UI semantic palette. Keep page code free of raw color literals. -->
+    <color name="gamefold_icon_background">#202125</color>
+    <color name="gamefold_splash_background">#15161A</color>
+    <color name="gamefold_splash_wordmark_shadow">#08090B</color>
+    <!-- Neutral shell remains dark; all in-display content uses the light palette below. -->
+    <color name="pixel_background_deep">#252429</color>
+    <color name="pixel_background_moss">#C4EA72</color>
+    <color name="pixel_background_moss_light">#F2F1ED</color>
+    <color name="pixel_surface_slate">#FBFAF7</color>
+    <color name="pixel_surface_slate_dark">#E2DED8</color>
+    <color name="pixel_surface_slate_pressed">#D8D2CA</color>
+    <color name="pixel_border_ink">#787370</color>
+    <color name="pixel_text_light">#FBFAF7</color>
+    <color name="pixel_text_dark">#1B1C1D</color>
+    <color name="pixel_text_secondary">#68635F</color>
+    <!-- A calm steel-blue focus separates navigation state from the red action system. -->
+    <color name="pixel_focus">#6D8F9C</color>
+    <color name="pixel_focus_glow">#D7E7EB</color>
+    <!-- Action, warning, and destructive states intentionally share the same red family. -->
+    <color name="pixel_action">#B65454</color>
+    <color name="pixel_magenta">#B65454</color>
+    <color name="pixel_action_pressed">#8F4040</color>
+    <color name="pixel_action_shadow">#6F3636</color>
+    <color name="pixel_resize">#B9DDE8</color>
+    <color name="pixel_resize_shadow">#789EAA</color>
+    <color name="pixel_section_header">#5E5A57</color>
+    <color name="pixel_danger">#B65454</color>
+    <color name="pixel_warning">#B65454</color>
+    <color name="pixel_panel_shadow">#5E5A57</color>
+    <color name="pixel_disabled_surface">#DDD8D1</color>
+    <color name="pixel_disabled_text">#9A948E</color>
+    <color name="pixel_scrim">#991B1C1D</color>
+    <color name="pixel_transparent">#00000000</color>
+    <color name="pixel_home_surface">#F2F1ED</color>
+    <color name="pixel_home_text">#1B1C1D</color>
+    <color name="pixel_cartridge_shell">#D8D4CE</color>
+    <color name="pixel_cartridge_shell_shadow">#8A8783</color>
+    <color name="pixel_cartridge_border">#787370</color>
+    <color name="pixel_cartridge_highlight">#F0ECE7</color>
+    <color name="pixel_cartridge_inner">#B9B5B0</color>
+
+</resources>

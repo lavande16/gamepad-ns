@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/GameFoldPixel.ContentPage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/list_all"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:clipToPadding="false"
+        android:defaultFocusHighlightEnabled="false"
+        android:fadeScrollbars="false"
+        android:fillViewport="true"
+        android:paddingBottom="72dp"
+        android:scrollbars="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/layout_all"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="48dp"
+            android:paddingVertical="@dimen/pixel_space_sm">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/pixel_panel_background"
+                android:minHeight="144dp"
+                android:padding="@dimen/pixel_space_md">
+
+                <Button
+                    android:id="@+id/button_back"
+                    style="@style/GameFoldPixel.MaterialLayerIconButton"
+                    android:contentDescription="@string/back"
+                    app:icon="@drawable/pixel_icon_back"
+                    app:iconTint="@color/pixel_text_dark"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/game_art_frame"
+                    style="@style/GameFoldPixel.Card.Outlined"
+                    android:layout_width="112dp"
+                    android:layout_height="112dp"
+                    android:layout_marginStart="@dimen/pixel_space_md"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/button_back"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:id="@+id/image_game_screen"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:contentDescription="@string/game_cover"
+                        android:scaleType="centerCrop"
+                        tools:src="@drawable/gamefold_brand_mark" />
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <LinearLayout
+                    android:id="@+id/game_summary"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/pixel_space_md"
+                    android:layout_marginEnd="@dimen/pixel_space_md"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toBottomOf="@id/game_art_frame"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/game_art_frame"
+                    app:layout_constraintTop_toTopOf="@id/game_art_frame">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/title"
+                        style="@style/GameFoldPixel.Text.Title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:textAlignment="viewStart"
+                        tools:text="The Legend of Zelda: Breath of the Wild" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/playtime"
+                        style="@style/GameFoldPixel.Text.Value.Light"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/pixel_space_sm"
+                        android:background="@drawable/pixel_section_header_background"
+                        android:paddingHorizontal="@dimen/pixel_space_sm"
+                        android:paddingVertical="@dimen/pixel_space_xs"
+                        tools:text="PLAYTIME  06S" />
+
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/list_properties"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/pixel_space_sm"
+                android:clipToPadding="false"
+                android:defaultFocusHighlightEnabled="false"
+                android:nestedScrollingEnabled="false" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_start"
+        style="@style/GameFoldPixel.Button.Action"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/pixel_space_md"
+        android:text="@string/start"
+        app:icon="@drawable/ic_play"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

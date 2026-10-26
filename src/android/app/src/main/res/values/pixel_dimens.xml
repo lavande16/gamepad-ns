@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- One visual pixel is 2dp; spatial rhythm stays on a 4/8dp grid. -->
+    <dimen name="pixel_unit">2dp</dimen>
+    <dimen name="pixel_border">2dp</dimen>
+    <dimen name="pixel_border_focus">4dp</dimen>
+    <dimen name="pixel_shadow_offset">4dp</dimen>
+    <dimen name="pixel_space_xs">4dp</dimen>
+    <dimen name="pixel_space_sm">8dp</dimen>
+    <dimen name="pixel_space_md">16dp</dimen>
+    <dimen name="fps_overlay_margin_horizontal">22dp</dimen>
+    <dimen name="fps_overlay_margin_vertical">20dp</dimen>
+    <dimen name="pixel_space_lg">24dp</dimen>
+    <dimen name="pixel_space_xl">32dp</dimen>
+    <dimen name="pixel_touch_target">48dp</dimen>
+    <dimen name="pixel_toolbar_height">44dp</dimen>
+    <dimen name="pixel_button_height">56dp</dimen>
+    <dimen name="pixel_list_item_height">64dp</dimen>
+    <dimen name="pixel_icon_sm">16dp</dimen>
+    <dimen name="pixel_icon_md">24dp</dimen>
+    <dimen name="pixel_icon_lg">32dp</dimen>
+    <dimen name="pixel_text_caption">12sp</dimen>
+    <dimen name="pixel_text_body">16sp</dimen>
+    <dimen name="pixel_text_label">16sp</dimen>
+    <dimen name="pixel_text_title">24sp</dimen>
+    <dimen name="pixel_text_display">32sp</dimen>
+    <dimen name="pixel_dialog_min_width">280dp</dimen>
+    <dimen name="pixel_dialog_max_width">480dp</dimen>
+    <dimen name="pixel_progress_height">16dp</dimen>
+    <dimen name="pixel_switch_width">56dp</dimen>
+    <dimen name="pixel_switch_height">32dp</dimen>
+</resources>

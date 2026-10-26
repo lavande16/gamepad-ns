@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="@dimen/pixel_space_lg"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/pixel_space_lg"
+        android:paddingRight="@dimen/pixel_space_lg">
+
+        <Button
+            android:id="@+id/button_decrement"
+            style="@style/GameFoldPixel.Button.Compact"
+            android:layout_width="56dp"
+            android:contentDescription="@string/decrement"
+            android:text="-" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/text_input_layout"
+            style="@style/GameFoldPixel.TextInputLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/pixel_space_sm"
+            android:layout_marginRight="@dimen/pixel_space_sm"
+            android:layout_weight="1"
+            android:hint="Value">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edit_value"
+                style="@style/GameFoldPixel.EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:textAlignment="textStart"
+                tools:text="0" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/button_increment"
+            style="@style/GameFoldPixel.Button.Compact"
+            android:layout_width="56dp"
+            android:contentDescription="@string/increment"
+            android:text="+" />
+
+    </LinearLayout>
+
+</RelativeLayout>

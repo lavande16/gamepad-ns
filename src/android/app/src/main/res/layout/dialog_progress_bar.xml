@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/pixel_dialog_background"
+    android:orientation="vertical"
+    android:paddingVertical="16dp">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/message"
+        style="@style/GameFoldPixel.Text.Caption"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="6dp"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:requiresFadingEdge="horizontal"
+        android:singleLine="true"
+        android:textAlignment="viewStart"
+        android:visibility="gone" />
+
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:id="@+id/progress_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="24dp"
+        app:indicatorColor="@color/pixel_focus"
+        app:trackColor="@color/pixel_surface_slate_dark"
+        app:trackCornerRadius="0dp"
+        app:trackThickness="@dimen/pixel_progress_height" />
+
+</LinearLayout>
