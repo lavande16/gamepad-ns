@@ -1,8 +1,8 @@
 # GamePad NS
 
 
-> **把折叠屏变成更顺手的 Switch 掌机。**  
-> Make a foldable phone feel more like a Switch handheld.
+> **把 Switch 游戏带到 Android 平板的大屏上。**  
+> Bring Switch gaming to the big screen of your Android tablet.
 
 
 <p align="center"><a href="https://gamefold.pages.dev"><img src="gamepad-ns.png" alt="GamePad NS 游戏库界面 / GamePad NS library screenshot" width="90%"></a></p>
@@ -23,7 +23,7 @@
 | 基线资料 | 仓库 baseline/ 与 Release 归档 |
 
 
-## 让大屏与手柄布局跟得上你 · Play your way on a big screen
+## 让平板大屏与触控操作相配合 · A tablet-first gaming experience
 
 
 - **根据屏幕配置调整操控区域：**方向键、摇杆和动作键随显示配置缩放，减少更改分辨率后控件偏位的情况。  
@@ -32,8 +32,8 @@
   **Flexible display profiles:** V1.8 keeps a 4K logical profile and native-size restore, while retaining the earlier 2304×1296 option. Actual display behavior depends on the device.
 - **为长时间游玩保留熟悉的设置：**IPS、LSFG 与 T28 相关配置保留在基线中，帮助继续使用既有的画面与运行偏好。  
   **Keep familiar play settings:** IPS, LSFG and T28-related options remain available in the baseline for players who rely on those display and runtime preferences.
-- **围绕折叠屏掌机使用：**把触控按键、游戏画面和大屏比例放在同一套体验里，不必每次切换都重新适应操作位置。  
-  **Built for foldable handheld use:** keep touch controls, gameplay and the larger screen profile in one coherent setup.
+- **为横屏平板优化游戏与触控：**让游戏画面、按键布局与大屏显示配置配合起来，适合在 Android 平板上体验 Switch 游戏。  
+  **A tablet-first landscape setup:** bring gameplay, touch controls and display profiles together for a Switch experience on an Android tablet.
 
 
 本仓库保存 V1.8 / 10030 的源码与基线。游戏文件与第三方运行内容不随仓库提供；兼容性会因设备、游戏和运行配置而异。  
